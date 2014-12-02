@@ -33,6 +33,8 @@ def rgbToDMC(col_rgb):
 			closeness = diff
 			code = dmc_list[x]
 			description = dmc_list[x+1]
+		if closeness < 10:
+			return code, description, closeness
 	return code, description, closeness
 
 
