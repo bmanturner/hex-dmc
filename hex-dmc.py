@@ -29,7 +29,7 @@ for line in dmc_file:
 dmc_file.close()
 
 # Loop through color chart and find nearest DMC thread color
-res = [1000, '', '', '']
+res = [1000, '', '']
 for x in range(0, len(dmc_list), 3):
 	r = int("0x%s%s" % (dmc_list[x+2][0],dmc_list[x+2][1]), 16)
 	g = int("0x%s%s" % (dmc_list[x+2][2],dmc_list[x+2][3]), 16)
